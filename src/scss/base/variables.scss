@@ -1,0 +1,46 @@
+$desktop-hd-width: 1920px;
+$desktop-wide-width: 1680px;
+$desktop-width: 1366px;
+$tablet-landscape-width: 1024px;
+$tablet-portrait-width: 839px;
+$phone-landscape-width: 669px;
+$phone-portrait-width: 414px;
+
+$white: #fff;
+$white-2: #f9fafb;
+$red: #d0021b;
+$silver: #a7b4ba;
+$black: #16141a;
+$black-2: #232632;
+$black-3: #1b202c;
+$silver-2: #393939;
+$silver-3: #393245;
+$silver-4: #1c222d;
+$blue: #4a90e2;
+$orange: #fad32b;
+
+$time: .3s;
+$time-half: $time / 2;
+$time-double: $time * 2;
+
+$font: 'Muli', 'Helvetica', 'Arial', sans-serif;
+
+$light: 300; 
+$regular: 400;
+$medium: 500; 
+$semi-bold: 600; 
+$bold: 700; 
+$hight-bold: 900;
+
+
+
+$colors:
+  hsla(337, 84, 48, 0.75)
+  hsla(160, 50, 48, 0.75)
+  hsla(190, 61, 65, 0.75)
+  hsla( 41, 82, 52, 0.75);
+$size: 2.5em;
+$thickness: 0.5em;
+
+$lat: ($size - $thickness) / 2;
+$offset: $lat - $thickness;

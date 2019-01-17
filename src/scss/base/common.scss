@@ -1,0 +1,68 @@
+body {
+    font-family: $font;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+@mixin btn($color) {
+    overflow: hidden;
+    position: relative;
+    &::after {
+        background: $color;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all $time-double cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+    }
+    &:hover::after {
+        left: 120%;
+        transition: all $time-double cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+
+@mixin link($color) {
+    opacity: 0.8;
+    color: $color;
+    font-family: $font;
+    font-size: 17px;
+    font-weight: $regular;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: all $time;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        height: 2px;
+        background-color: #fff;
+        background-position: center;
+        width: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &:hover::before {
+        content: "";
+        width: 100%;
+        transition: all $time ease-in-out;
+    }
+}
